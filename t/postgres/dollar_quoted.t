@@ -6,6 +6,7 @@ use warnings;
 use SQL::SplitStatement;
 
 use Test::More tests => 12;
+use Test::Differences;
 
 my $sql_code = <<'SQL';
 CREATE LANGUAGE 'plpgsql' HANDLER plpgsql_call_handler
@@ -74,9 +75,10 @@ DECLARE liahona CURSOR FOR SELECT * FROM films;
 
 DROP FUNCTION somefunc(integer);
 
-CREATE FUNCTION funcname (argument-types) RETURNS return-type AS $$
+CREATE FUNCTION funcname (argument-types) RETURNS return-type AS $perl$
     # PL/Perl function body
-$$ LANGUAGE plperl;
+    $arg->{things} = 'stuff';
+$perl$ LANGUAGE plperl;
 
 SQL
 
@@ -101,7 +103,7 @@ $splitter->keep_terminator(1);
 $splitter->keep_comments(1);
 @statements = $splitter->split( $sql_code );
 
-is(
+eq_or_diff(
     join( '', @statements ), $sql_code,
     'SQL code correctly rebuilt'
 );

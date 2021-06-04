@@ -8,3 +8,4 @@ SQL-SplitStatement-*
 *.stackdump
 
 .*.sw?
+.yath-*
