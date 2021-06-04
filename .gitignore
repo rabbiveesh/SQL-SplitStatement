@@ -8,3 +8,5 @@ SQL-SplitStatement-*
 *.stackdump
 
 .*.sw?
+.yath-*
+.yath.user.rc
