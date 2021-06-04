@@ -1,11 +1,9 @@
-## no critic
+use strict;
+use warnings;
 package SQL::SplitStatement;
-## use critic
 
 our $VERSION = '1.00021';
 
-use strict;
-use warnings;
 
 use base 'Class::Accessor::Fast';
 
