@@ -9,3 +9,4 @@ SQL-SplitStatement-*
 
 .*.sw?
 .yath-*
+.yath.user.rc
