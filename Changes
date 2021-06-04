@@ -3,6 +3,7 @@ Revision history for SQL-SplitStatement
 {{$NEXT}}
 
    * fix POD issues
+   * fix issues with options in bin/sql-split (breaking, but wasn't working anyways)
 
 1.00020       2011-03-26 11:05:02 Europe/Rome
 
