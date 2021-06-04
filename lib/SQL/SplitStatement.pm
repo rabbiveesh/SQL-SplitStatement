@@ -62,7 +62,7 @@ my $IS_RE                 = qr/^IS$/i;
 my $TYPE_RE               = qr/^TYPE$/i;
 my $BODY_RE               = qr/^BODY$/i;
 my $DROP_RE               = qr/^DROP$/i;
-my $CRUD_RE               = qr/^(?:DELETE|INSERT|SELECT|UPDATE)$/i;
+my $CRUD_RE               = qr/^(?:DELETE|INSERT|SELECT|UPDATE|REPLACE)$/i;
 
 my $GRANT_REVOKE_RE       = qr/^(?:GRANT|REVOKE)$/i;;
 my $CREATE_ALTER_RE       = qr/^(?:CREATE|ALTER)$/i;
