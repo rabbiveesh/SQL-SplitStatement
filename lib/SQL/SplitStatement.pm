@@ -1229,10 +1229,6 @@ You can also look for information at:
 
 =over 4
 
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=SQL-SplitStatement>
-
 =item * AnnoCPAN: Annotated CPAN documentation
 
 L<http://annocpan.org/dist/SQL-SplitStatement>
@@ -1241,9 +1237,9 @@ L<http://annocpan.org/dist/SQL-SplitStatement>
 
 L<http://cpanratings.perl.org/d/SQL-SplitStatement>
 
-=item * Search CPAN
+=item * On MetaCPAN
 
-L<http://search.cpan.org/dist/SQL-SplitStatement/>
+L<https://metacpan.org/pod/SQL::SplitStatement/>
 
 =back
 
