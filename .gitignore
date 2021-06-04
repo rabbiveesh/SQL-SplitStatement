@@ -6,3 +6,5 @@ SQL-SplitStatement-*
 *.tmp
 *.bak
 *.stackdump
+
+.*.sw?

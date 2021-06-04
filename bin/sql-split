@@ -15,7 +15,7 @@ use warnings;
 
 use SQL::SplitStatement;
 
-our $VERSION = $SQL::SplitStatement::VERSION;
+our $VERSION = '1.00021';
 
 use Getopt::Long;
 Getopt::Long::Configure qw(
