@@ -9,7 +9,7 @@ our @ISA = qw(Exporter);
 
 our @EXPORT_OK= qw(tokenize_sql);
 
-our $VERSION = '1.00023';
+our $VERSION = '1.00024';
 
 my $re= qr{
     (

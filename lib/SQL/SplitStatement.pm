@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package SQL::SplitStatement;
 
-our $VERSION = '1.00023';
+our $VERSION = '1.00024';
 
 
 use base 'Class::Accessor::Fast';
