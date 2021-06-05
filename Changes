@@ -3,6 +3,7 @@ Revision history for SQL-SplitStatement
 {{$NEXT}}
 
    * support REPLACE as an INSERT alternative (gh #5)
+   * allow { and } to pass through in PL/Perl functions (gh #2)
 
 1.00021   2021-06-04 15:21:30 IDT (TRIAL RELEASE)
 
