@@ -8,7 +8,7 @@ our $VERSION = '1.00022';
 use base 'Class::Accessor::Fast';
 
 use Carp qw(croak);
-use SQL::Tokenizer 0.22 qw(tokenize_sql);
+use SQL::SplitStatement::Tokenizer qw(tokenize_sql);
 use List::MoreUtils qw(firstval firstidx each_array);
 use Regexp::Common qw(delimited);
 

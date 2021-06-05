@@ -5,7 +5,7 @@ use warnings;
 
 use SQL::SplitStatement;
 
-use Test::More tests => 13;
+use Test::More tests => 12;
 use Test::Differences;
 
 my $sql_code = <<'SQL';
@@ -77,7 +77,6 @@ DROP FUNCTION somefunc(integer);
 
 CREATE FUNCTION funcname (argument-types) RETURNS return-type AS $perl$
     # PL/Perl function body
-    $arg->{things} = 'stuff';
 $perl$ LANGUAGE plperl;
 
 SQL
@@ -95,12 +94,6 @@ cmp_ok(
     'Statements correctly split'
 );
 
-eq_or_diff $statements[-1], <<'DONERIGHT', 'does not strip dollar quoted delimeters';
-CREATE FUNCTION funcname (argument-types) RETURNS return-type AS $perl$
-    # PL/Perl function body
-    $arg->{things} = 'stuff';
-$perl$ LANGUAGE plperl
-DONERIGHT
 
 $splitter = SQL::SplitStatement->new;
 
