@@ -417,10 +417,6 @@ SUPPORT
 
     You can also look for information at:
 
-    *   RT: CPAN's request tracker
-
-        <http://rt.cpan.org/NoAuth/Bugs.html?Dist=SQL-SplitStatement>
-
     *   AnnoCPAN: Annotated CPAN documentation
 
         <http://annocpan.org/dist/SQL-SplitStatement>
@@ -429,9 +425,9 @@ SUPPORT
 
         <http://cpanratings.perl.org/d/SQL-SplitStatement>
 
-    *   Search CPAN
+    *   On MetaCPAN
 
-        <http://search.cpan.org/dist/SQL-SplitStatement/>
+        <https://metacpan.org/pod/SQL::SplitStatement/>
 
 ACKNOWLEDGEMENTS
     Igor Sutton for his excellent SQL::Tokenizer, which made writing this
