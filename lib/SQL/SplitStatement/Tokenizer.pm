@@ -18,7 +18,7 @@ my $re= qr{
         (?:<>|<=>|>=|<=|==|=|!=|!|<<|>>|<|>|\|\||\||&&|&|-|\+|\*(?!/)|/(?!\*)|\%|~|\^|\?)
                                 # operators and tests
         |
-        [\[\]\(\),;.]            # punctuation (parenthesis, comma)
+        [\[\]\(\)\{\},;.]            # punctuation (parenthesis, comma)
         |
         \'\'(?!\')              # empty single quoted string
         |
